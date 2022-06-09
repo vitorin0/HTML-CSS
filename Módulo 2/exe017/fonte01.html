@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            background-color: darkgray;
+            color: brown;
+
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Medidas Absolutas
+            cm, mm, in (polegada), px, pt, pc (paica)
+
+            Medidas Relativas
+            em (relativa ao tamanho m fonte), ex (relativa ao tamanho x fonte), rem (relativo ao tamanho x e m da fonte que está no body), vw(largura da sua tela é em %), vh(altura da sua tela), %
+            16px geralmente é = 1em
+            Para weight, style e text-decoration é necessário que a fonte escolhida tenha suporte para essas opcoes
+            */
+            line-height: normal;
+            font-variant: small-caps;
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;            
+        }
+
+        h1 {
+            font: normal lighter 3em Arial, Helvetica, sans-serif;
+        }
+
+        /*shorthand font
+        
+        font-style, font-weight, font-size, font-family
+        
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3em;
+        font-weight: lighter;
+        font-style: normal; 
+
+        font: underline normal lighter 3em Arial, Helvetica, sans-serif 
+        */
+        
+        h2 {
+            font: bold 2em Times;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate officia nam quam quos reprehenderit magni repellendus ullam consectetur facilis possimus, hic a nisi quaerat harum. Nobis dicta pariatur laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aliquam architecto quos veniam dolorem labore natus. Eum unde et suscipit, repellat a dignissimos nihil minima obcaecati nesciunt totam. Quaerat, placeat!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quibusdam, tempora, laudantium distinctio voluptatibus doloribus rerum placeat odio mollitia provident pariatur architecto, odit atque consequatur dolores. Odio, ullam vel. Ea.</p>
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../Desafio\ Site\ do\ Android/fontes/IDroid.otf') format('opentype');
+}
+
+#fonte {
+    font-family: 'idroid';
+    color: #005223;
+    font-weight: normal;
+}
+
+.fonte {
+    font-family: 'idroid';
+    font-size: 20px;
+    font-weight: normal;
+    color: #005223;
+    background-image: linear-gradient(to right, #009e4588, #00d15b66, #fefefe0f);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #26eb7b68;
+}
+
+header {
+    background-image: linear-gradient(to top, #005223, #009E44, #00D15B);
+    padding-top: 40px;
+    min-height: 150px;
+}
+
+header > h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    font-weight: normal;
+}
+
+header > h2 {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 10px 0px 20px 0px;     
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;  
+}
+
+main {
+    background-color: white;
+    padding: 10px 5px 3px 5px;
+    margin: 0px 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.696);
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #005223;
+    color: white;
+    text-align: center;
+    padding: 1px 0px;   
+    margin: 20px 0px;
+}
+
+p{
+    text-indent: 20px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+div.video {
+    background-color: #005223;
+    margin: 0px -5px 10px -5px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+article {
+    background-color: #26eb7b22;
+    border-radius: 5px 5px 10px 10px;
+    margin: 10px 10px;
+    padding: 0px 0px 5px 2px;    
+}
+
+article > h2 {
+    background-color: #11683796;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px 3px 0px 0px;
+    padding: 5px 15px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+.especial::before {
+    content: '✔';
+}

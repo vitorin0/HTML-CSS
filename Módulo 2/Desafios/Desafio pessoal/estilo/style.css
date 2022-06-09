@@ -1,0 +1,135 @@
+@charset "URF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+@font-face {
+    font-family: 'eart';
+    src: url('../fontes/Mother\ Tongue.otf') format('opentype');
+}
+@font-face {
+    font-family: 'lady';
+    src: url('../fontes/Ladybugletters.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color1: #e197c534;
+    --color2: #db51a685;
+    --color3: #A83E80;
+    --color4: #5C2246;
+    --color5: #5C3E50;
+
+    --fontedestaque:'Emilys Candy', cursive;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-image: linear-gradient(to top, var(--color2), var(--color1));
+    font-family: 'lady', cursive, serif;
+    text-align: center;
+    color: var(--color4);
+    padding-top: 20px;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+header h4 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-right: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: var(--color2);
+    padding: 15px;
+}
+
+nav > a {
+    color: rgba(255, 255, 255, 0.584);
+    text-decoration: none;
+    font-family: var(--fontedestaque);
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--color5);
+    border-radius: 5px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+main > h1 {
+    color: var(--color5);
+    font-family: var(--fontedestaque);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+main > p {
+    text-indent: 30px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 2em;
+}
+main > img {
+    display: block;
+    margin: auto;
+}
+
+aside {
+    background-image: linear-gradient(to bottom, var(--color3), var(--color2));
+    border-radius: 10px;
+}
+aside > h3 {
+    color: white;
+    font-family: var(--fontedestaque);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+aside > div {
+    margin: 10px 0px;
+    padding: 20px;
+    padding-bottom: 30%;
+    position: relative;
+}
+
+aside > div > iframe {
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    left: 10%;
+    top: 5%;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--color2), transparent);
+    padding: 15px;
+    columns: 3;
+}
+
+footer p {
+    padding-bottom: 5px;
+    font-weight: bold;
+}

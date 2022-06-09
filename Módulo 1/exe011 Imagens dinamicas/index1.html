@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../exe004 Imagens + Favicon/heart.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio em HTML5</h1>
+    <p>Vamos aprender a reproduzir o áudio</p>
+    <audio src="midia/Tango de la Noche.mp3" controls autoplay></audio>
+    <!--essa tag só é compatível com os formatos mp3, wav, ogg e nem sempre o navegador reconhece-->
+    
+    <audio preload="metadata" autoplay controls loop> <!--auto ou nada é um risco, pois só vai carregar o site quando o audio carregar. Já metadata e none sao os ideais, um carrega só alguns dados e o outro só carrega quando apertar o play-->
+        <!--o loop é pra música recomecar automaticamente, o controls é para ter os controles na tela e o autoplay nao está funcionando, mas seria para assim que o site carregar a música já comecar tbm-->
+        <source src="midia/Tango de la Noche.mp3" type="audio/mpeg">
+        <source src="midia/Tango de la Noche.ogg" type="audio/ogg">
+        <source src="midia/Tango de la Noche.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir este áudio. <a href="midia/Tango de la Noche.mp3">Clique aqui para baixar o arquivo MP3</a> </p>
+    </audio>
+
+
+</body>
+</html>
